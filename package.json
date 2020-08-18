@@ -21,7 +21,7 @@
   "dependencies": {
     "@babel/core": "^7.8.7",
     "@babel/polyfill": "^7.8.7",
-    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-env": "^7.11.0",
     "@babel/register": "^7.8.6",
     "babel-cli": "^6.26.0",
     "body-parser": "^1.19.0",
