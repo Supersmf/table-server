@@ -1,0 +1,23 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "extends": ["plugin:prettier/recommended", "prettier", "airbnb"],
+  "plugins": ["prettier"],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "import/imports-first": ["error", "absolute-first"],
+    "import/newline-after-import": "error",
+    "import/prefer-default-export": 0,
+    "implicit-arrow-linebreak": 0,
+    "operator-linebreak": 0,
+    "arrow-parens": 0,
+    "function-paren-newline": 0,
+    "indent": 0,
+    "no-confusing-arrow": 0
+  }
+}

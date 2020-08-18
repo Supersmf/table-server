@@ -1,0 +1,52 @@
+{
+  "name": "table",
+  "version": "1.0.0",
+  "description": "table server",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "table",
+    "api",
+    "rest",
+    "server",
+    "node",
+    "js"
+  ],
+  "author": "Mihail",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/register": "^7.8.6",
+    "babel-cli": "^6.26.0",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "core-util-is": "^1.0.2",
+    "cors": "^2.8.5",
+    "cron": "^1.8.2",
+    "express": "^4.17.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.9.3",
+    "node-geocoder": "^3.26.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "nodemon": "^1.19.4",
+    "prettier": "^1.19.1",
+    "prettier-eslint": "^9.0.1",
+    "pretty-quick": "^2.0.1"
+  }
+}
