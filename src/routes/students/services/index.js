@@ -1,7 +1,7 @@
 import Students from '../model';
 
 export default {
-  async getItems({ page, limit, search, orderBy, order, status = '' }) {
+  async getItems({ page, limit, search, orderBy = 'name', order = 'asc', status = '' }) {
     try {
       const total = Array.from(
         await Students.find({
