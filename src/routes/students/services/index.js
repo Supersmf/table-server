@@ -1,11 +1,11 @@
 import Students from '../model';
 
 export default {
-  async getItems({ page, limit, search, orderBy, status = '' }) {
+  async getItems({ page, limit, search, orderBy, order, status = '' }) {
     try {
       const total = Array.from(
         await Students.find({
-          name: { $regex: '^' + search },
+          name: { $regex: search, $options: 'i' },
           status: { $regex: '^' + status },
         }),
       ).length;
@@ -14,9 +14,10 @@ export default {
         count: limit,
         total,
         data: await Students.find({
-          name: { $regex: '^' + search },
+          name: { $regex: search, $options: 'i' },
           status: { $regex: '^' + status },
         })
+          .sort({ [orderBy]: order })
           .skip((page - 1) * limit)
           .limit(limit)
           .exec(),
